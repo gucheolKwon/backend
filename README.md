@@ -126,7 +126,9 @@ user = User(id=1, name="Alice")
 print(user.dict())
 ```
 
-
+```cmd
+uvicorn app:app --host 0.0.0.0 --port 8030 --loop asyncio --timeout-keep-alive 10000 --reload
+```
 
 
 
